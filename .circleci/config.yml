@@ -19,7 +19,6 @@ jobs:
             docker build --pull
             -t $IMAGE_NAMESPACE/$IMAGE_NAME:$TAG
             -t $IMAGE_NAMESPACE/$IMAGE_NAME:latest
-            --build-arg PIPENV_VERSION=$PIPENV_VERSION
             .
       - run:
           name: Test Docker image
