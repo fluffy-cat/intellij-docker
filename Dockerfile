@@ -1,4 +1,3 @@
 FROM openkbs/intellij-docker
 
-RUN sudo apt-add-repository --yes --update ppa:ansible/ansible && \
-  sudo apt install ansible -y
+RUN sudo pip install ansible paramiko jmespath
